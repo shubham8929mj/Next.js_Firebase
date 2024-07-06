@@ -1,4 +1,4 @@
-# POC
+# Next.js with Firebase
 
 This project is a Proof of Concept (POC) for a web application built with React, Next.js, Tailwind CSS, and RSuite components, integrated with Firebase for database and API functionalities.
 
