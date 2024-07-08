@@ -9,7 +9,6 @@ import { onAuthStateChanged, getAuth, User } from "firebase/auth";
 import firebase_app from "@/firebase/config";
 import Loader from "@/comonents/Loader";
 
-
 const auth = getAuth(firebase_app);
 
 interface AuthContextType {
@@ -43,11 +42,7 @@ export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
 
   return (
     <AuthContext.Provider value={{ user }}>
-      {loading ? (
-       <Loader/>
-      ) : (
-        children
-      )}
+      {loading ? <Loader /> : children}
     </AuthContext.Provider>
   );
 };
